@@ -1,0 +1,23 @@
+﻿<div id="progressModal" class="modal fade progress-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">
+                    <i class="fa fa-download"></i>
+                    Downloading
+                </h4>
+            </div>
+            <div class="modal-body">
+                <div ng-show="progress < 100" class="progress">
+                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: {{ progress }}%">
+                        <span class="sr-only">{{ progress }}% Complete</span>
+                    </div>
+                </div>
+                <span ng-hide="progress < 100" class="h5">Photos has been successfully saved to your gallery.</span>
+            </div>
+            <div class="modal-footer" ng-hide="progress < 100">
+                <button type="button" class="btn btn-link" data-dismiss="modal">Got it!</button>
+            </div>
+        </div>
+    </div>
+</div>

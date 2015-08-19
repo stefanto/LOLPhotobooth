@@ -1,0 +1,1 @@
+D:\DonnySagala\Websites\150601_lolPhotoBooth_App\lolphotobooth\plugins\phonegap-plugin-barcodescanner\src\windows\lib\obj\debug\WinRTBarcodeReader.csprojResolveAssemblyReference.cache

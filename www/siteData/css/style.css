@@ -1,0 +1,282 @@
+﻿/* latin */
+@font-face {
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Pacifico Regular'), local('Pacifico-Regular'), url('../fonts/pacifico/Pacifico.ttf') format('truetype');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+.font-pacifico {
+    font-family: 'Pacifico';
+}
+
+/* latin-ext */
+@font-face {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Titillium Web'), local('TitilliumWeb-Regular'), url(../fonts/titillium-web/TitilliumWeb-Regular.ttf) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Titillium Web'), local('TitilliumWeb-Regular'), url(../fonts/titillium-web/TitilliumWeb-Regular.ttf) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+.font-titillium-web {
+    font-family: 'Titillium Web';
+}
+
+html, body, [ng-view] {
+    height:100%;
+}
+
+body {
+    -webkit-touch-callout: none; /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none; /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none; /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color: #F26C5E;
+    /*background-image: linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image: -webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image: -ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0, #A7A7A7), color-stop(0.51, #E4E4E4) );
+    background-attachment: fixed;*/
+    /*background: url(../img/sativa.png);*/
+}
+
+    body.isExpanded {
+        height: auto;
+    }
+
+a, a:hover, a:focus, a:active {
+    color: white;
+    text-decoration: none;
+}
+
+#main-page {
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+#gallery-page {
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+#contact-detail, #contact-detail p, #contact-detail a {
+    color: inherit;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 15px 0;
+}
+
+    #footer p {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0;
+    }
+
+    #footer.relative {
+        position: relative;
+    }
+
+/* Custom css section */
+.nav-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #333333;
+    font-size: 0;
+}
+
+.btn.btn-main {
+    color: #aaaaaa;
+    border-radius: 0;
+}
+
+    .btn.btn-main:active, .btn.btn-main.active {
+        color: #ffffff;
+        background-color: #222222;
+    }
+
+        .btn.btn-main:active:before, .btn.btn-main.active:before {
+            content: '';
+            position: absolute;
+            height: 3px;
+            width: 100%;
+            left: 0;
+            background-color: #E44C3C;
+            top: -1px;
+        }
+
+.btn.btn-scan {
+    color: #ffffff;
+    background-color: rgba(0, 160, 255, 0.5);
+}
+
+.btn-image {
+    max-height: 100px;
+    max-width: 100px;
+    background: none;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: smaller;
+}
+
+    .btn-image:active, .btn-image:hover, .btn-image:focus, .btn-image.active {
+        text-decoration: none;
+        color: white;
+    }
+
+    .btn-image img {
+        width: 100%;
+    }
+
+.main-nav {
+    padding: 0 15px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    margin-bottom: 30px;
+}
+
+.navbar-lol {
+    background-color: #BD4B3F;
+}
+
+/*.btn.btn-main, .btn.btn-scan {
+    font-size: 20px;
+}*/
+
+.modal.progress-modal {
+    top: 50%;
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+}
+
+    .modal.progress-modal .progress {
+        margin-bottom: 0;
+        border-radius: 0;
+    }
+
+    .modal.progress-modal .modal-content {
+        border-radius: 0px;
+        border: none;
+    }
+
+    .modal.progress-modal .modal-header,
+    .modal.progress-modal .modal-footer {
+        border: none;
+    }
+
+    .modal.progress-modal .modal-header,
+    .modal.progress-modal .modal-content,
+    .modal.progress-modal .modal-footer {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+.card {
+    background-color: #ffffff;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+    .card .card-image {
+        position: relative;
+    }
+
+        .card .card-image img {
+            position: relative;
+            width: 100%;
+        }
+
+    .card .card-content {
+        position: relative;
+        padding: 15px;
+    }
+
+    .card .card-action {
+        border-top: 1px solid rgba(160, 160, 160, 0.2);
+        position: relative;
+        padding: 15px;
+    }
+
+.test-dlg {
+    display: none;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+    .test-dlg.show {
+        display: block;
+    }
+
+    .test-dlg .dlg-content {
+        position: relative;
+        padding: 15px;
+    }
+
+/*ngAnimate*/
+.animate {
+    position: absolute;
+}
+
+.ng-enter.animate, .ng-leave.animate {
+    -webkit-transition: .6s cubic-bezier(0.420, 0.000, 0.580, 1.000) all;
+    -moz-transition: .6s cubic-bezier(0.420, 0.000, 0.580, 1.000) all;
+    -ms-transition: .6s cubic-bezier(0.420, 0.000, 0.580, 1.000) all;
+    -o-transition: .6s cubic-bezier(0.420, 0.000, 0.580, 1.000) all;
+    transition: .6s cubic-bezier(0.420, 0.000, 0.580, 1.000) all;
+}
+
+.ng-enter.animate {
+    /*left: 100%;*/
+    opacity:0;
+}
+
+.ng-enter.ng-enter-active.animate {
+    /*left: 0;*/
+    opacity:1;
+}
+
+.ng-leave.animate {
+    /*left: 0;*/
+    opacity:0;
+}
+
+
+#homeDiv {height:80%; width:100%; max-width:500px;}
+#homeDiv td {padding:20px;}
+#homeDiv label {color:#FFF;}
+
+/*RESPONSIVE*/
+@media (max-height: 550px) {
+    #homeDiv label {display:none;}
+}

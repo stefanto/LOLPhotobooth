@@ -1,0 +1,67 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "package.appxmanifest": {
+                "parents": {
+                    "/Package/Capabilities": [
+                        {
+                            "xml": "<DeviceCapability Name=\"webcam\" />",
+                            "count": 3
+                        },
+                        {
+                            "xml": "<DeviceCapability Name=\"microphone\" />",
+                            "count": 2
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "HelloCordova"
+        },
+        "phonegap-plugin-barcodescanner": {
+            "PACKAGE_NAME": "HelloCordova"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "HelloCordova"
+        },
+        "cordova-plugin-media-capture": {
+            "PACKAGE_NAME": "HelloCordova"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "HelloCordova"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "HelloCordova"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "HelloCordova"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "HelloCordova"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "Lolphotobooth"
+        },
+        "nl.x-services.plugins.socialsharing": {
+            "PACKAGE_NAME": "Lolphotobooth"
+        },
+        "cordova-plugin-crosswalk-webview": {
+            "PACKAGE_NAME": "Lolphotobooth"
+        },
+        "org.wbt11a.Canvas2ImagePlugin": {
+            "PACKAGE_NAME": "Lolphotobooth"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "HelloCordova"
+        }
+    }
+}
