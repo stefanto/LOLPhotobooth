@@ -1,0 +1,13 @@
+﻿<div id="gallery-page" style="margin-top:50px">
+    <div ng-repeat="image in imagesPath" class="card">
+        <div class="card-image">
+            <img ng-src="{{image}}" />
+        </div>
+        <div class="card-action">
+            <button ng-click="shareIt(image)" class="btn btn-info btn-default btn-block">
+                <i class="fa fa-share"></i>
+                Share
+            </button>
+        </div>
+    </div>
+</div>
